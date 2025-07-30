@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Goldman:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headerTop{
+    background-color:#000000 ;
+    height: 80px;
+    flex-shrink: 0;
+}
+.headerTopContent{
+    color: #fff;
+    padding: 15px 0;
+}
+.headerTopContentRight{
+    font-size: 18px;
+}
+.headerTopContentLeft{
+    font-size: 18px;
+    
+}
+.headerTopContent a{
+    color: #fff;
+    margin-right: 20px;
+}
+.headerTopContentMiddle img{
+    width: 60px;
+    border-radius: 50%;
+}
+.headerTopContentLeft a:last-child{
+    margin-right: 0;
+}
+.headerTopContentLeft a:first-child{
+    margin-left: 20px;
+}
+.mainPage{
+    background-color: #070606;
+    height: calc(90vh - 80px);
+     display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainPageContent{
+    color: #fff;
+}
+.mainPageContent h1{
+    font-size: 125px;
+    margin-bottom: 20px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.mainPageContent p{
+    font-size: 15px;
+    font-family: "Goldman", sans-serif;
+  font-weight: 400;
+}
