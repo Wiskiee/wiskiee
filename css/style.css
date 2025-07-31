@@ -14,12 +14,17 @@
 .headerTopContent{
     color: #fff;
     padding: 15px 0;
+    height: 80px;
 }
 .headerTopContentRight{
     font-size: 18px;
+     height: 80px;
+    width: 100px;
 }
 .headerTopContentLeft{
     font-size: 18px;
+    height: 80px;
+    width: 100px;
     
 }
 .headerTopContent a{
@@ -27,21 +32,62 @@
     margin-right: 20px;
 }
 .headerTopContentMiddle img{
+    position: absolute;
     width: 60px;
     border-radius: 50%;
+    top: 1.5%;
+    animation-name: headerTopAnimationImage;
+    animation-duration: 1s;
+    animation-delay:2s ;
+    opacity: 0;
 }
 .headerTopContentLeft a:last-child{
     margin-right: 0;
+    position: absolute;
+    left: 24%;
+    animation-name: headerTopAnimationIcon1;
+    animation-duration: 1s;
+    animation-delay: 0;
+    
 }
 .headerTopContentLeft a:first-child{
+    margin: 0;
+    position: absolute;
+    left: 0%;
+    animation-name: headerTopAnimationIcon2;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    color: #000000;
+}
+.headerTopContentRight a:last-child{
+    margin-right: 0;
+    position: absolute;
+    right: 0%;
+    color: #000000;
+    animation-name: headerTopAnimationIcon4;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+.headerTopContentRight a:first-child{
     margin-left: 20px;
+    position: absolute;
+    right: 24%;
+    animation-name: headerTopAnimationIcon3;
+    animation-duration: 1s;
+    
+}
+.headerTopContent a:hover{
+    font-size: 22px;
+    color: #fff;
+    text-shadow: #fff;
+    transition: 300ms;
 }
 .mainPage{
-    background-color: #070606;
+    background-color: #0f0f0f;
     height: calc(90vh - 80px);
-     display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mainPageContent{
     color: #fff;
@@ -54,5 +100,57 @@
 .mainPageContent p{
     font-size: 15px;
     font-family: "Goldman", sans-serif;
-  font-weight: 400;
+    font-weight: 400;
+}
+
+@keyframes headerTopAnimationIcon1{
+    0%{
+        left: 0%;
+        color: #000000;
+    }
+    100%{
+        left: 24%;
+        color: #fff;
+    }
+}
+@keyframes headerTopAnimationIcon2{
+    0%{
+        left: 0%;
+        color: #000000;
+    }
+    100%{
+        left: 20%;
+        color: #fff;
+    }
+}
+@keyframes headerTopAnimationIcon3{
+    0%{
+        right: 0%;
+        color: #000000;
+    }
+    100%{
+        right: 24%;
+        color: #fff;
+    }
+}
+@keyframes headerTopAnimationIcon4{
+    0%{
+        right: 0%;
+        color: #000000;
+    }
+    100%{
+        right: 20%;
+        color: #fff;
+    }
+}
+
+@keyframes headerTopAnimationImage{
+    0%{
+        top: 0;
+        opacity: 0;
+    }
+    100%{
+        top: 1.5%;
+        opacity: 100%;
+    }
 }
