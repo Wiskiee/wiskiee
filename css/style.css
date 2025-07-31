@@ -94,11 +94,25 @@
     font-size: 125px;
     margin-bottom: 20px;
     font-family: "Bebas Neue", sans-serif;
+    animation-name: titleFadeAnimation;
+    animation-duration: 5s;
 }
 .mainPageContent p{
     font-size: 15px;
     font-family: "Goldman", sans-serif;
     font-weight: 400;
+}
+.mainPageContent p #descPart1{
+    animation-name: descAnimation1;
+    animation-duration: 5s;
+    color: #0f0f0f;
+    animation-delay: 3s;
+}
+.mainPageContent p #descPart2{
+    animation-name: descAnimation2;
+    animation-duration: 5s;
+    color: #0f0f0f;
+    animation-delay: 3s;
 }
 
 @keyframes headerTopAnimationIcon1{
@@ -150,5 +164,32 @@
     100%{
         top: 1.5%;
         opacity: 100%;
+    }
+}
+@keyframes titleFadeAnimation{
+    0%{
+        color: #0f0f0f;
+    }
+    100%{
+        color: #fff;
+    }
+}
+
+@keyframes descAnimation1{
+    0%{
+        margin-right: 100px;
+        color: #0f0f0f;
+    }
+    100%{
+        margin-right: 0;
+        color: #fff;
+    }
+}
+@keyframes descAnimation2{
+    0%{
+        color: #0f0f0f;
+    }
+    100%{
+        color: #fff;
     }
 }
