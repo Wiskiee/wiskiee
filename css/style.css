@@ -19,23 +19,23 @@
 .headerTopContentRight{
     font-size: 18px;
      height: 80px;
-    width: 100px;
+    width: 130px;
 }
 .headerTopContentLeft{
     font-size: 18px;
     height: 80px;
-    width: 100px;
+    width: 130px;
     
 }
 .headerTopContent a{
     color: #fff;
-    margin-right: 20px;
 }
 .headerTopContentMiddle img{
     position: absolute;
     width: 60px;
     border-radius: 50%;
     top: 1.5%;
+    left: calc(50% - 30px);
     animation-name: headerTopAnimationImage;
     animation-duration: 1s;
     animation-delay:2s ;
@@ -51,7 +51,7 @@
     
 }
 .headerTopContentLeft a:first-child{
-    margin: 0;
+    margin-right: 20px;
     position: absolute;
     left: 0%;
     animation-name: headerTopAnimationIcon2;
@@ -60,7 +60,7 @@
     color: #000000;
 }
 .headerTopContentRight a:last-child{
-    margin-right: 0;
+    margin-left: 20px;
     position: absolute;
     right: 0%;
     color: #000000;
