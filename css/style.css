@@ -104,13 +104,13 @@
 }
 .mainPageContent p #descPart1{
     animation-name: descAnimation1;
-    animation-duration: 5s;
+    animation-duration: 1.5s;
     color: #0f0f0f;
     animation-delay: 3s;
 }
 .mainPageContent p #descPart2{
     animation-name: descAnimation2;
-    animation-duration: 5s;
+    animation-duration: 1.5s;
     color: #0f0f0f;
     animation-delay: 3s;
 }
@@ -192,4 +192,28 @@
     100%{
         color: #fff;
     }
+}
+
+@media(max-width:768px){
+    @keyframes headerTopAnimationIcon4{
+        0%{
+            right: 0%;
+            color: #000000;
+        }
+        100%{
+            right: 13%;
+            color: #fff;
+        }
+    }
+    @keyframes headerTopAnimationIcon2{
+        0%{
+            left: 0%;
+            color: #000000;
+        }
+        100%{
+            left: 13%;
+            color: #fff;
+        }
+    }
+
 }
