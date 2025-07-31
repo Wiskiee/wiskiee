@@ -18,7 +18,7 @@
 }
 .headerTopContentRight{
     font-size: 18px;
-     height: 80px;
+    height: 80px;
     width: 130px;
 }
 .headerTopContentLeft{
@@ -42,7 +42,6 @@
     opacity: 0;
 }
 .headerTopContentLeft a:last-child{
-    margin-right: 0;
     position: absolute;
     left: 24%;
     animation-name: headerTopAnimationIcon1;
