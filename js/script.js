@@ -1,11 +1,18 @@
 var icon1= document.getElementById("icon-1")
 var icon3 = document.getElementById("icon-4")
 var headerImg = document.getElementById("headerImage")
+var desc1= document.getElementById("descPart1")
+var desc2= document.getElementById("descPart2")
 
 setInterval(icon1Sleep,1100);
 setInterval(icon4Sleep,1100);
 setInterval(sleepImage,2200)
+setInterval(sleepDesc,3000)
 
+function sleepDesc(){
+    desc1.style.color="#fff"
+    desc2.style.color="#fff"
+}
 
 function icon1Sleep(){
     icon1.style.left="20%"
