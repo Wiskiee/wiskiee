@@ -115,6 +115,26 @@
     animation-delay: 3s;
 }
 
+.footer{
+    background-color: #000000;
+}
+
+.footerContent{
+    color: #fff;
+}
+.contactContent a{
+    color: #fff;
+}
+.contactContent a:hover{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 200ms;
+}
+.contactLine{
+    animation-name: contactLineAnimation;
+    animation-duration: 1s;
+}
 @keyframes headerTopAnimationIcon1{
     0%{
         left: 0%;
@@ -193,6 +213,15 @@
         color: #fff;
     }
 }
+@keyframes contactLineAnimation{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
 
 @media(max-width:768px){
     @keyframes headerTopAnimationIcon4{
